@@ -35,7 +35,6 @@ body{
 
 .contents{
   width: 448px;
-  margin: 80px auto 0;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -55,7 +54,7 @@ body{
 
 .contents header h1::before{
   content: "";
-  display: inline;
+  display: inline-block;
   width: 8px;
   height: 32px;
   background-color: #FF007A;
