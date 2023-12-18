@@ -26,6 +26,14 @@ body{
 /* component */
 
 .wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.contents{
   width: 448px;
   margin: 80px auto 0;
   border-radius: 20px;
@@ -33,19 +41,19 @@ body{
   position: relative;
 }
 
-.wrap header{
+.contents header{
   padding: 46px;
   background-color: #fff;
   display: flex;
   border-bottom: 4px solid #ddd;
 }
 
-.wrap header h1{
+.contents header h1{
   color: #FF007A;
   font-size: 2.4rem;
 }
 
-.wrap header h1::before{
+.contents header h1::before{
   content: "";
   display: inline;
   width: 8px;
@@ -57,7 +65,7 @@ body{
   left: 0;
 }
 
-.wrap main{
+.contents main{
   background-color: #eee;
   display: flex;
   flex-direction: column;
@@ -83,6 +91,6 @@ ul.list li.checked{
   font-weight: bold;
 }
 
-.wrap main ul li:last-child{
+.contents main ul li:last-child{
   margin-bottom: 0; 
 }
