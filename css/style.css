@@ -81,15 +81,29 @@ ul.list li{
   font-size: 1.6rem;
   margin-bottom: 14px;
   padding: 12px;
+  display: flex;
 }
 
 ul.list li.checked{
-  background: #fff url("../images/check.png") no-repeat right center;
   transform: scale(1.1);
   border-color:#759CFF;
   color: #759CFF;
   font-weight: bold;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul.list li::after{
+  content: " ";
+  display: block;
+  background: url("../images/check.png") no-repeat center center /cover;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  margin-left: auto;
+}
+
+ul.list li.checked::after{
+  opacity: 1;
 }
 
 .contents main ul li:last-child{
